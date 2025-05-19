@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Photo Gallery</title>
+  <style>
+    #image {
+      height: 300px;
+      width: 500px;
+      background-color: #ddd;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      line-height: 300px;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .preview {
+      height: 100px;
+      margin: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .preview:focus {
+      outline: 2px solid blue;
+    }
+  </style>
+</head>
+<body onload="addTabFocus()">
+
+  <div id="image">Hover over an image below to display here.</div>
+
+  <img class="preview" src="https://via.placeholder.com/100x100?text=1" alt="Image 1" 
+    onmouseover="upDate(this)" onmouseleave="undo()" 
+    onfocus="upDate(this)" onblur="undo()">
+  
+  <img class="preview" src="https://via.placeholder.com/100x100?text=2" alt="Image 2" 
+    onmouseover="upDate(this)" onmouseleave="undo()" 
+    onfocus="upDate(this)" onblur="undo()">
+  
+  <img class="preview" src="https://via.placeholder.com/100x100?text=3" alt="Image 3" 
+    onmouseover="upDate(this)" onmouseleave="undo()" 
+    onfocus="upDate(this)" onblur="undo()">
+  
+  <img class="preview" src="https://via.placeholder.com/100x100?text=4" alt="Image 4" 
+    onmouseover="upDate(this)" onmouseleave="undo()" 
+    onfocus="upDate(this)" onblur="undo()">
+  
+  <img class="preview" src="https://via.placeholder.com/100x100?text=5" alt="Image 5" 
+    onmouseover="upDate
